@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo7">
+      <h1>Merhaba</h1>  
+      <h1>Hello</h1> 
+      <h1>DOM element</h1> 
+      <p>deneme</p>
+    </div>
+    <button id="demo8" onclick="TagidCalisma()">Tag id app</button>
+   <script>
+    const x=document.getElementById("demo7");
+    const y=x.tagName("h1");
+    function TagIdCalisma(){
+        document.getElementById("demo8").innerHTML=y[2].innerHTML;
+    }
+   </script> 
+</body>
+</html>
